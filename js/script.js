@@ -19,3 +19,19 @@ function ibg() {
 }
 
 ibg();
+
+if ($('.slider__body').length > 0) {
+    $('.slider__body').slick({
+        // Наличие стрелок управления
+        arrows: false,
+        // Точки под слайдером
+        dots: true,
+        // Автоматическое изменение высоты слайдера
+        // Добавить в класс '.slick-track' параметр 'align-items: flex-start;'
+        adaptiveHeight: true,
+        // Кол-во отображаемых элементов
+        slidesToShow: 1,
+        // Скорость пролистывания
+        speed: 300
+    });
+}
